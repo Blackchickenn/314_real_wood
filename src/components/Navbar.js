@@ -7,8 +7,8 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Navbar() {
   return (
-    <AppBar position='static' sx={{
-        height: '10vh'
+    <AppBar position='sticky' sx={{
+        paddingY: '10px'
     }}>
         <Toolbar>
             <IconButton color='inherit' size='large' edge='start' aria-label='logo'>
