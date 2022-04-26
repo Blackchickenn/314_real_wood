@@ -1,7 +1,10 @@
-body{
-  background-image: url(../src/images/bg5.jpg);
-  /* background-position:unset; */
+/* body{
   background-repeat: no-repeat;
+} */
+
+.ourwork-background-image{
+  background-image: url(../src/images/bg5.jpg);
+  
 }
 
 

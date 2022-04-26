@@ -11,7 +11,8 @@ export default function Navbar() {
         <AppBar position='sticky' >
             <Toolbar sx={{
                 justifyContent: 'space-between',
-                padding: '20px 0'
+                padding: '20px 0',
+                backgroundColor: '#282a2d'
             }}>
                 <Box sx={{
                     display:'flex',
@@ -20,19 +21,33 @@ export default function Navbar() {
                     <IconButton color='inherit' size='large' edge='start' aria-label='logo'>
                         <ForestIcon />
                     </IconButton>
-                    <Typography variant='h6'>REAL WOOD</Typography>
+                    <Typography variant='h5'>REAL WOOD</Typography>
                 </Box>
                 <Box sx={{
                     display:'flex',
                     alignItems: 'center'
                 }}>
                     <Box sx={{
-                        display:{xs:'none', sm:'block'}
+                        display:{xs:'none', sm:'block'},
+                        paddingRight: '30px'
                     }}>
-                        <Button color='inherit'>About Us</Button>
-                        <Button color='inherit'>Our Work</Button>
-                        <Button color='inherit'>Our Team</Button>
-                        <Button variant='contained' color='warning' startIcon={<EmailIcon />}>Contact Us</Button>
+                        <Button color='inherit' sx={{
+                            marginRight: '50px',
+                            fontSize: '1.1rem'
+                        }}>Home</Button>
+                        <Button color='inherit' sx={{
+                            marginRight: '50px',
+                            fontSize: '1.1rem',
+                            wordSpacing: '5px'
+                        }}>Our Work</Button>
+                        <Button color='inherit' sx={{
+                            marginRight: '50px',
+                            fontSize: '1.1rem',
+                            wordSpacing: '5px'
+                        }}>Our Team</Button>
+                        <Button variant='contained' color='warning' startIcon={<EmailIcon />} sx={{
+                            fontSize: '1.1rem'
+                        }}>Contact Us</Button>
                     </Box>
                     <MenuIcon sx={{
                         display:{xs:'block', sm:'none'}
@@ -43,3 +58,7 @@ export default function Navbar() {
       </div>
   )
 }
+
+
+
+// backgroundcolor: #282a2d

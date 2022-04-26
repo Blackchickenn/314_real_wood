@@ -2,6 +2,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import CssBaseline from '@mui/material/CssBaseline';
 import Ourwork from "./components/Ourwork";
+import Ourteam from "./components/Ourteam"
+import Contactus from "./components/Contactus";
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Hero />
       <Ourwork />
+      <Ourteam />
+      <Contactus />
     </div>
   );
 }
