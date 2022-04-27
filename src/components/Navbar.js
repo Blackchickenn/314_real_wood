@@ -11,7 +11,7 @@ export default function Navbar() {
         <AppBar position='sticky' >
             <Toolbar sx={{
                 justifyContent: 'space-between',
-                padding: '20px 0',
+                padding: '20px',
                 backgroundColor: '#282a2d'
             }}>
                 <Box sx={{
@@ -28,29 +28,44 @@ export default function Navbar() {
                     alignItems: 'center'
                 }}>
                     <Box sx={{
-                        display:{xs:'none', sm:'block'},
-                        paddingRight: '30px'
+                        display:{xs:'none', sm:'none', md:'block'},
+                        paddingRight:{
+                            md: '10px',
+                            lg: '30px'
+                        }
                     }}>
                         <Button color='inherit' sx={{
-                            marginRight: '50px',
+                            marginRight: {
+                                md: '10px',
+                                lg: '30px',
+                                xl: '50px'
+                            },
                             fontSize: '1.1rem'
                         }}>Home</Button>
                         <Button color='inherit' sx={{
-                            marginRight: '50px',
+                            marginRight: {
+                                md: '10px',
+                                lg: '30px',
+                                xl: '50px'
+                            },
                             fontSize: '1.1rem',
-                            wordSpacing: '5px'
+                            wordSpacing: '3px'
                         }}>Our Work</Button>
                         <Button color='inherit' sx={{
-                            marginRight: '50px',
+                            marginRight: {
+                                md: '10px',
+                                lg: '30px',
+                                xl: '50px'
+                            },
                             fontSize: '1.1rem',
-                            wordSpacing: '5px'
+                            wordSpacing: '3px'
                         }}>Our Team</Button>
                         <Button variant='contained' color='warning' startIcon={<EmailIcon />} sx={{
                             fontSize: '1.1rem'
                         }}>Contact Us</Button>
                     </Box>
                     <MenuIcon sx={{
-                        display:{xs:'block', sm:'none'}
+                        display:{xs:'block', sm:'block', md:'none'}
                     }}/>
                 </Box>
             </Toolbar>

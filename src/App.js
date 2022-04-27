@@ -4,6 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Ourwork from "./components/Ourwork";
 import Ourteam from "./components/Ourteam"
 import Contactus from "./components/Contactus";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Ourwork />
       <Ourteam />
       <Contactus />
+      <Footer />
     </div>
   );
 }

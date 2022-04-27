@@ -22,13 +22,18 @@ export default function Ourteam() {
             OUR Team</Typography>
         <Grid container columnSpacing={5} rowSpacing={5}  sx={{
             padding:'50px 80px 120px 80px',
-            justifyContent: 'space-evenly'
+            justifyContent: 'space-evenly',
         }}>
             {teamData.map(item => (
             <Grid item xs={12} sm={12} md={6} lg={4} sx={{
                 // width: '450px',
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent: "center",
+                flexDirection: {
+                    xs: 'column',
+                    sm: 'row'
+                }
             }}>
                 <Avatar src={item.img} alt={item.alt} sx={{
                     width: '150px',

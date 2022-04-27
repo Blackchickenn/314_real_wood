@@ -23,11 +23,30 @@ export default function Ourwork() {
     }}>
       OUR WORK</Typography>
     <Grid container rowSpacing={5} columnSpacing={5} sx={{
-      padding:'30px 80px 60px 80px'
+    paddingY: {
+      xs: "50px",
+      sm: "50px",
+      md: "50px",
+      lg: "50px",
+      xl: "50px",
+    },
+    paddingX:{
+      xs: "50px",
+      sm: "50px",
+      md: "50px",
+      lg: "50px",
+      xl: "50px",
+    }
     }}>
       {itemData.map(item => (
-        <Grid item xs={12} sm={12} md={6} lg={4}>
-              <Card >
+        <Grid item xs={12} sm={12} md={6} lg={4} display='flex' justifyContent='center'>
+              <Card sx={{
+                maxWidth:{
+                  xs: '350px',
+                  sm: '600px',
+                },
+                
+              }}>
                 <CardActionArea> 
                   <CardMedia
                     component="img"
@@ -39,7 +58,13 @@ export default function Ourwork() {
                       <Typography gutterBottom variant="h5" component="div" >
                         {item.title}
                       </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="text.secondary" sx={{
+                      height: {
+                        xs: '120px',
+                        sm: '60px',
+                        md: '100px'
+                      }
+                    }}>
                       {item.text}
                     </Typography>
                   </CardContent>
@@ -84,7 +109,7 @@ const itemData = [
       id: "4",
       title: "Title number four",
       img: "../images/card4.jpeg",
-      text: "Chocolate candy canes candy canes jelly beans gingerbread. Cake ice cream jelly jelly oat cake lollipop jujubes. Muffin marzipan chocolate cake tiramisu sweet icing. Biscuit chocolate bar chocolate cake bonbon cotton candy ice cream sesame snaps dessert powder."
+      text: "Chocolate candy canes candy canes jelly beans gingerbread. Cake ice cream jelly jelly oat cake lollipop jujubes. Muffin marzipan chocolate cake tiramisu sweet icing. Biscuit chocolate bar chocolate cake bonbon cotton candy."
   },
   {   
       id: "5",
